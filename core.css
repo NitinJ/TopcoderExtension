@@ -1,0 +1,12 @@
+.question_done{
+	background-color:green;
+}
+.question_couldnotbedone{
+	background-color:red;
+}
+.question_done td a{
+    color:white !important;
+}
+.question_couldnotbedone td a{
+    color:white !important;
+}

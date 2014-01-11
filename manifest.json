@@ -1,0 +1,25 @@
+{
+  "name": "Topcoder",
+  "description": "Shows some of the features of the Context Menus API",
+  "version": "0.6",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["sample.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://community.topcoder.com/tc?module=ProblemArchive*"],
+      "css": ["core.css"],
+      "js": ["jquery.js","jquery.contextMenu.js","core.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "tabs", "http://community.topcoder.com/tc?module=ProblemArchive*", "storage"
+  ],
+  "web_accessible_resources": [
+    "jquery-2.0.3.min.map","core.css"
+  ],
+  "manifest_version": 2
+}
